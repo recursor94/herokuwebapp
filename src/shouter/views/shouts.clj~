@@ -1,0 +1,3 @@
+(ns shouter.views.shouts
+  (:use [hiccup.core :only (h)]
+        ))

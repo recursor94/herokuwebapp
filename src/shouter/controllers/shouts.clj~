@@ -1,0 +1,3 @@
+(ns shouter.controllers.shouts
+  (:use [compojure.core :only (defroutes GET POST)])
+  )

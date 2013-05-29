@@ -1,0 +1,3 @@
+(ns shouter.views.layout
+  (:use [hiccup.core :only (html)]
+        [hiccup.page :only (html5 include-css)]))
