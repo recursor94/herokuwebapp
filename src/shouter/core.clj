@@ -7,6 +7,13 @@
             [shouter.controllers.shouts :as shouts]
             [shouter.views.layout :as layout]))
 
+
+(defroutes routes
+  shouts/routes
+  (route/resources "/")
+  (route/not-found (layout/four-oh-four)))
+
+
 (comment
   (defn index []
     (html5
@@ -20,10 +27,7 @@
 (defn start [port]
   (run-jetty application {:port port :join? false}))
 
-(defroutes routes
-  shouts/routes
-  (route/resources "/")
-  (route/not-found (layout/four-oh-four)))
+
 
 
 (defn -main []
