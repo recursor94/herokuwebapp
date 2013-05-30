@@ -4,9 +4,9 @@
 
 (defn all []
   (sql/with-connection (System/getenv "DATABASE_URL")
-    (sql/with-query-results results)
-    ["SELECT * FROM shouts ORDER BY ID DESC"]
-    (into [] results)))
+    (sql/with-query-results results
+      ["SELECT * FROM shouts ORDER BY ID DESC"]
+      (into [] results))))
 
 
 (defn create [shout]
