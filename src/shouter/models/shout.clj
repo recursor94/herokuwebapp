@@ -1,4 +1,4 @@
-(ns shouter.models.migration
+(ns shouter.models.shout
   (:require [clojure.java.jdbc :as sql]))
 
 
