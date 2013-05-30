@@ -9,4 +9,5 @@
                  [ring/ring-jetty-adapter "1.1.8"]
                  [compojure "1.1.5"]
                  [hiccup "1.0.3"]]
-  :main shouter.core)
+  :main shouter.core
+  :min-lein-version "2.0.0")
