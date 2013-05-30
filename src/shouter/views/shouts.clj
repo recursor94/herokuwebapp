@@ -24,4 +24,4 @@
   (layout/common "SHOUTER"
     (shout-form)
     [:div {:class "clear"}]
-    (display-shouts shouts)
+    (display-shouts shouts)))
